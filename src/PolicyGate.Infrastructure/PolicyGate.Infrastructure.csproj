@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../PolicyGate.Application/PolicyGate.Application.csproj" />
+    <ProjectReference Include="../PolicyGate.Domain/PolicyGate.Domain.csproj" />
+  </ItemGroup>
+</Project>

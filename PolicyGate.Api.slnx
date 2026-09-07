@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PolicyGate.Api/PolicyGate.Api.csproj" />
+    <Project Path="src/PolicyGate.Application/PolicyGate.Application.csproj" />
+    <Project Path="src/PolicyGate.Domain/PolicyGate.Domain.csproj" />
+    <Project Path="src/PolicyGate.Infrastructure/PolicyGate.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PolicyGate.UnitTests/PolicyGate.UnitTests.csproj" />
+    <Project Path="tests/PolicyGate.IntegrationTests/PolicyGate.IntegrationTests.csproj" />
+  </Folder>
+</Solution>
