@@ -7,5 +7,10 @@ namespace PolicyGate.Api.Controllers;
 public sealed class AuditController(IAuditRepository repository) : ControllerBase
 {
     [HttpGet] public async Task<ActionResult<IReadOnlyCollection<AuditEvent>>> Get(CancellationToken ct) => Ok(await repository.GetAllAsync(ct));
-    [HttpDelete, Authorize(Roles="AIAdmin")] public async Task<IActionResult> Clear(CancellationToken ct) { await repository.ClearAsync(ct); return NoContent(); }
+    [HttpDelete, Authorize(Roles = "AIAdmin")]
+    public async Task<IActionResult> Clear(CancellationToken ct)
+    {
+        await repository.ClearAsync(ct);
+        return NoContent();
+    }
 }
